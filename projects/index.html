@@ -11,14 +11,14 @@
 <body>
 
 <nav>
-  <div class="wrap">
-    <div class="nav-brand">benson<span>yu</span>.dev</div>
+  <div class="wrap nav-inner-solo">
     <ul class="nav-links">
       <li><a href="/">About Me</a></li>
       <li><a href="/work-experience/">Work Experience</a></li>
       <li><a href="/projects/" class="active">Projects</a></li>
       <li><a href="/education/">Education</a></li>
       <li><a href="/contact/">Contact</a></li>
+      <li><a href="/assets/resume.pdf" target="_blank">Resume</a></li>
     </ul>
   </div>
 </nav>
@@ -33,8 +33,12 @@
   <div class="wrap">
 
     <div class="project-card">
-      <h3>Boston ISD Housing Reconciliation</h3>
-      <p>Reconciled 100,000+ housing records using Python and fuzzy matching to identify 83,532 unregistered rental properties across Boston — Dorchester had the highest concentration by area, UMass Boston the highest for student housing. Built an interactive zip-code filter tool and presented findings to city officials.</p>
+      <h3>Boston Inspectional Services Department — Data Reconciliation</h3>
+      <ul class="exp-bullets">
+        <li>Cleaned and reconciled 100k+ city housing records using address standardization and fuzzy matching, enabling accurate detection of unregistered rental properties</li>
+        <li>Identified 83k+ unregistered rental properties, surfacing compliance risks by geography, ownership type, and proximity to universities for targeted enforcement</li>
+        <li>Delivered interactive dashboards and presented results to ISD officials, driving proactive enforcement strategies and improving housing compliance</li>
+      </ul>
       <div class="tag-row">
         <span class="tag">Python</span><span class="tag">Fuzzy Matching</span><span class="tag">Public Sector</span>
       </div>
@@ -44,12 +48,39 @@
     </div>
 
     <div class="project-card">
-      <h3>Munch Market — Restaurant Data Quality Platform</h3>
-      <p>Owned the data cleaning pipeline in PySpark for a food delivery dataset. Built a scoring framework measuring accuracy, completeness, consistency, and validity, validated against the Google Places API using rapidfuzz. Output fed into Power BI for downstream analysis.</p>
+      <h3>Munch Market Analysis</h3>
+      <ul class="exp-bullets">
+        <li>Built Azure Databricks medallion pipelines to ingest historical and incremental data from SQL Server and Azure Blob Storage, including order files updated every 20 minutes, for daily 8 AM refreshes</li>
+        <li>Profiled and cleaned 50+ restaurant data attributes, identifying issues across operating hours, categories, contact details, addresses, ratings, and availability to improve Silver-layer data quality</li>
+        <li>Collaborated with Analytics, Delivery, and Restaurant stakeholders to translate business requirements into KPIs and analytical datasets supporting orders, sales, delivery performance, rider operations, and forecasting</li>
+      </ul>
       <div class="tag-row">
-        <span class="tag">PySpark</span><span class="tag">rapidfuzz</span><span class="tag">Power BI</span>
+        <span class="tag">Databricks</span><span class="tag">Power BI</span><span class="tag">Azure</span>
       </div>
     </div>
+
+    <div class="project-card">
+      <h3>COVID-19 Policy Analysis</h3>
+      <ul class="exp-bullets">
+        <li>Engineered an Azure-based ETL pipeline integrating 10k+ COVID-19 records from multiple sources, centralizing data for improved accessibility and analysis</li>
+        <li>Designed a star schema warehouse in Azure Synapse, streamlining data organization and enabling high-performance queries for large-scale analytics</li>
+        <li>Built Power BI dashboards tracking infection and recovery trends, highlighting the three most effective policies in reducing case growth and informing public health decisions</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">Azure Synapse</span><span class="tag">ETL</span><span class="tag">Power BI</span>
+      </div>
+      <div class="project-links" style="margin-top:14px;">
+        <a href="https://github.com/bensonzyu/COVID-19-Policy-Proposals">View Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">Other Projects</div>
+    <h2>Smaller builds</h2>
 
     <div class="project-card">
       <h3>Airbnb London Price Prediction</h3>
@@ -70,17 +101,6 @@
       </div>
       <div class="project-links" style="margin-top:14px;">
         <a href="https://github.com/bensonzyu/World-Happiness-Project">View Code</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>COVID-19 Policy Proposals</h3>
-      <p>Data-driven policy analysis evaluating pandemic response measures.</p>
-      <div class="tag-row">
-        <span class="tag">Data Analysis</span><span class="tag">Policy</span>
-      </div>
-      <div class="project-links" style="margin-top:14px;">
-        <a href="https://github.com/bensonzyu/COVID-19-Policy-Proposals">View Code</a>
       </div>
     </div>
 
