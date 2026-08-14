@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Benson Yu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-brand">benson<span>yu</span>.dev</div>
+    <ul class="nav-links">
+      <li><a href="/">About Me</a></li>
+      <li><a href="/work-experience/">Work Experience</a></li>
+      <li><a href="/projects/" class="active">Projects</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header wrap">
+  <div class="eyebrow">Portfolio</div>
+  <h1>Projects</h1>
+  <p>Data cleaning, reconciliation, and modeling work — from a 100K-record municipal dataset to weekend explorations.</p>
+</div>
+
+<section>
+  <div class="wrap">
+
+    <div class="project-card">
+      <h3>Boston ISD Housing Reconciliation</h3>
+      <p>Reconciled 100,000+ housing records using Python and fuzzy matching to identify 83,532 unregistered rental properties across Boston — Dorchester had the highest concentration by area, UMass Boston the highest for student housing. Built an interactive zip-code filter tool and presented findings to city officials.</p>
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">Fuzzy Matching</span><span class="tag">Public Sector</span>
+      </div>
+      <div class="project-links" style="margin-top:14px;">
+        <a href="https://github.com/BU-Spark/ds-isd-reconciliation/blob/data-cleaning-analysis/README.md">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Munch Market — Restaurant Data Quality Platform</h3>
+      <p>Owned the data cleaning pipeline in PySpark for a food delivery dataset. Built a scoring framework measuring accuracy, completeness, consistency, and validity, validated against the Google Places API using rapidfuzz. Output fed into Power BI for downstream analysis.</p>
+      <div class="tag-row">
+        <span class="tag">PySpark</span><span class="tag">rapidfuzz</span><span class="tag">Power BI</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Airbnb London Price Prediction</h3>
+      <p>Built a predictive model for Airbnb listing prices across London using regression techniques and feature engineering on listing attributes.</p>
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">Regression</span>
+      </div>
+      <div class="project-links" style="margin-top:14px;">
+        <a href="https://github.com/bensonzyu/Airbnb-London/blob/main/BA305_Final.pdf">View Report</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>World Happiness Project</h3>
+      <p>Exploratory analysis of global happiness data, digging into which factors actually correlate with well-being across countries.</p>
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">EDA</span>
+      </div>
+      <div class="project-links" style="margin-top:14px;">
+        <a href="https://github.com/bensonzyu/World-Happiness-Project">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>COVID-19 Policy Proposals</h3>
+      <p>Data-driven policy analysis evaluating pandemic response measures.</p>
+      <div class="tag-row">
+        <span class="tag">Data Analysis</span><span class="tag">Policy</span>
+      </div>
+      <div class="project-links" style="margin-top:14px;">
+        <a href="https://github.com/bensonzyu/COVID-19-Policy-Proposals">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Handwritten Recognition Calculator</h3>
+      <p>A calculator that reads handwritten digits and operators and computes the result.</p>
+      <div class="tag-row">
+        <span class="tag">Machine Learning</span><span class="tag">Computer Vision</span>
+      </div>
+      <div class="project-links" style="margin-top:14px;">
+        <a href="https://github.com/bensonzyu/Handwritten-Recognition-Calculator">View Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><p>© 2026 Benson Yu</p></div>
+</footer>
+</body>
+</html>
