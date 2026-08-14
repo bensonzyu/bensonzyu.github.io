@@ -71,9 +71,19 @@ nav .wrap.nav-inner-solo { justify-content: center; }
 .btn-ghost { border: 1px solid var(--rule); color: var(--paper); }
 .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
 
-/* SKILLS PANEL — hero sidebar */
-.skills-panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 24px; }
-.skills-panel .panel-head { font-family: var(--mono); color: var(--amber); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+/* SOLO HERO (centered, single column — matches reference) */
+.hero-solo { padding: 100px 0 72px; text-align: center; }
+.hero-solo h1 { font-family: var(--mono); font-size: 48px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 6px; }
+.hero-solo .role { font-size: 22px; color: var(--muted); font-weight: 500; margin: 0 auto 24px; height: 30px; }
+.hero-solo .lede { font-size: 17px; color: #C7CAD1; max-width: 62ch; margin: 0 auto 34px; }
+.cta-row-center { justify-content: center; }
+
+.skill-pill-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
+.skill-pill {
+  font-family: var(--mono); font-size: 14px; font-weight: 500;
+  background: var(--surface); border: 1px solid var(--rule);
+  padding: 10px 20px; border-radius: 20px; color: var(--paper);
+}
 
 /* SECTIONS */
 section { padding: 64px 0; }
@@ -90,6 +100,31 @@ h2 { font-family: var(--mono); font-size: 26px; margin-bottom: 36px; }
 .exp-desc { color: #C7CAD1; font-size: 15px; max-width: 62ch; }
 .exp-bullets { color: #C7CAD1; font-size: 15px; max-width: 66ch; padding-left: 18px; margin-top: 4px; }
 .exp-bullets li { margin-bottom: 6px; }
+
+/* JOB CARD (work experience page — matches reference) */
+.job-card { display: grid; grid-template-columns: 64px 1fr; gap: 24px; padding: 34px 0; border-bottom: 1px solid var(--rule); }
+.job-card:last-child { border-bottom: none; }
+.job-badge {
+  width: 56px; height: 56px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-weight: 700; font-size: 15px; color: var(--amber);
+}
+.job-body h2 { font-size: 20px; font-weight: 700; margin-bottom: 2px; }
+.job-body h3 { font-size: 15px; font-weight: 500; color: var(--amber); margin-bottom: 6px; }
+.job-date { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+.job-summary { color: #C7CAD1; font-size: 15px; max-width: 66ch; margin: 14px 0 10px; }
+.read-more {
+  display: inline-block; margin-top: 14px;
+  font-family: var(--mono); font-size: 13px; color: var(--amber);
+  border-bottom: 1px solid var(--amber);
+}
+.read-more:hover { color: #DDB53C; border-color: #DDB53C; }
+
+@media (max-width: 600px) {
+  .job-card { grid-template-columns: 1fr; }
+  .job-badge { display: none; }
+}
 .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
 .tag { font-family: var(--mono); font-size: 11px; color: var(--muted); border: 1px solid var(--rule); padding: 3px 9px; border-radius: 3px; }
 
@@ -108,11 +143,31 @@ h2 { font-family: var(--mono); font-size: 26px; margin-bottom: 36px; }
 .edu-org { color: var(--amber); font-size: 14.5px; margin-bottom: 8px; }
 .edu-item p { color: #C7CAD1; font-size: 15px; max-width: 64ch; }
 
-/* SKILLS */
-.skill-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-.skill-group-label { font-family: var(--mono); font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
-.skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.skill-chip { font-family: var(--mono); font-size: 13px; background: var(--surface); border: 1px solid var(--rule); padding: 6px 12px; border-radius: 3px; }
+/* EDUCATION BLOCK */
+.edu-block { display: grid; grid-template-columns: 64px 1fr; gap: 24px; }
+.edu-badge {
+  width: 56px; height: 56px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-weight: 700; font-size: 15px; color: var(--amber);
+}
+.edu-block h2 { font-size: 19px; font-weight: 700; margin-bottom: 2px; }
+.edu-block h3 { font-size: 15px; font-weight: 500; color: var(--amber); margin-bottom: 14px; }
+.course-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; }
+.course-list li { color: #C7CAD1; font-size: 14.5px; padding-left: 14px; position: relative; }
+.course-list li::before { content: "—"; position: absolute; left: 0; color: var(--amber); }
+
+/* TECH STACK COLUMNS */
+.stack-columns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.stack-col-head { font-family: var(--mono); font-size: 12px; color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.stack-item { font-size: 14.5px; color: var(--paper); padding: 6px 0; }
+
+@media (max-width: 700px) {
+  .edu-block { grid-template-columns: 1fr; }
+  .edu-badge { display: none; }
+  .course-list { grid-template-columns: 1fr; }
+  .stack-columns { grid-template-columns: 1fr 1fr; }
+}
 
 /* CONTACT */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 640px; }
