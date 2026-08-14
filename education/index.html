@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Education | Benson Yu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
 <nav>
-  <div class="wrap nav-inner-solo">
-    <ul class="nav-links">
+  <div class="wrap">
+    <ul class="navlinks">
       <li><a href="/">About Me</a></li>
       <li><a href="/work-experience/">Work Experience</a></li>
       <li><a href="/projects/">Projects</a></li>
@@ -20,87 +20,98 @@
       <li><a href="/assets/resume.pdf" target="_blank">Resume</a></li>
       <li><a href="/contact/">Contact</a></li>
     </ul>
+    <div class="gear"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
   </div>
 </nav>
 
-<div class="page-header wrap">
-  <div class="eyebrow">Background</div>
-  <h1>Education</h1>
-  <p>B.S. in Data Science from Boston University, plus the certifications and programs that built the stack below.</p>
-</div>
+<main>
+<div class="page-card" id="technical-stack">
+  <div class="center">
+    <div class="page-title">Education</div>
+    <div class="page-underline" style="margin-left:auto;margin-right:auto;"></div>
+    <p class="page-sub">B.S. in Data Science from Boston University.</p>
+  </div>
 
-<section>
-  <div class="wrap">
-    <div class="section-tag">Relevant Coursework</div>
-    <div class="edu-block">
-      <div class="edu-badge"><img src="https://logo.clearbit.com/bu.edu" alt="Boston University logo"></div>
-      <div>
-        <h2>Boston University</h2>
-        <h3>B.S. Data Science — May 2025</h3>
-        <ul class="course-list">
-          <li>Statistics &amp; Machine Learning</li>
-          <li>Applied Data Analysis</li>
-          <li>Database Systems</li>
-          <li>Data Visualization</li>
-          <li>Cloud Computing</li>
-          <li>Algorithms</li>
-        </ul>
-        <p style="color:var(--muted); font-size:14px; margin-top:14px;">Organizations: BU Spark!, BU Data Science Association, BU Sports Analytics Club, Stock Trading at BU</p>
-      </div>
+  <div class="section-heading">Relevant Coursework</div>
+  <div class="inner-card edu-course-card">
+    <div class="edu-uni">
+      <div class="edu-uni-name">Boston University</div>
+      <div class="edu-seal"><img src="https://logo.clearbit.com/bu.edu" alt="Boston University seal"></div>
     </div>
-
-    <div class="edu-block" style="margin-top:36px;">
-      <div class="edu-badge">✓</div>
-      <div>
-        <h2>Certifications</h2>
-        <ul class="course-list">
-          <li>Databricks Certified Data Engineer Associate — Jul 2026</li>
-          <li>Client Service Job Simulation, Bloomberg — Jul 2026</li>
-          <li>Google Data Analytics Professional Certificate — Aug 2023</li>
-        </ul>
+    <div class="edu-tabs-panel" data-course-group>
+      <div class="tab-row" data-target="#course-panels">
+        <div class="tab-btn active">B.S. Data Science</div>
+      </div>
+      <div id="course-panels">
+        <div class="tab-panel active">
+          <ul class="course-cols">
+            <li>Statistics & Machine Learning</li>
+            <li>Applied Data Analysis</li>
+            <li>Database Systems</li>
+            <li>Data Visualization</li>
+            <li>Cloud Computing</li>
+            <li>Algorithms</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<section id="technical-stack">
-  <div class="wrap">
-    <div class="section-tag">Technical Stack</div>
-    <h2>Full skill set</h2>
-    <div class="stack-columns">
-  <div class="stack-col">
-    <div class="stack-col-head">Languages</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/python">Python</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/postgresql">SQL</div>
+  <div class="section-heading">Certifications</div>
+  <div class="inner-card">
+    <ul class="course-cols">
+      <li>Databricks Certified Data Engineer Associate — Jul 2026</li>
+      <li>Client Service Job Simulation, Bloomberg — Jul 2026</li>
+      <li>Google Data Analytics Professional Certificate — Aug 2023</li>
+    </ul>
   </div>
-  <div class="stack-col">
-    <div class="stack-col-head">ML / Analytics</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/pandas/E9E6DD">Pandas</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/numpy">NumPy</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/scikitlearn">Scikit-learn</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/plotly">Matplotlib</div>
-  </div>
-  <div class="stack-col">
-    <div class="stack-col-head">Data &amp; BI</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/databricks">Databricks</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/powerbi">Power BI</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/apachespark">Apache Spark</div>
-    <div class="stack-item">Delta Lake</div>
-    <div class="stack-item">Unity Catalog</div>
-  </div>
-  <div class="stack-col">
-    <div class="stack-col-head">Cloud &amp; Tools</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/microsoftazure">Microsoft Azure</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/git">Git</div>
-    <div class="stack-item"><img src="https://cdn.simpleicons.org/visualstudiocode">VS Code</div>
-    <div class="stack-item">Azure DevOps</div>
+
+  <div class="section-heading">Technical Stack</div>
+  <div class="inner-card stack-tabs-card">
+    <div class="tab-row" data-target="#stack-panels">
+      <div class="tab-btn active">Languages</div>
+      <div class="tab-btn">ML / Analytics</div>
+      <div class="tab-btn">Data & BI</div>
+      <div class="tab-btn">Cloud & Tools</div>
+    </div>
+    <div id="stack-panels">
+      <div class="tab-panel active">
+        <div class="stack-grid">
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/python">Python</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/postgresql">SQL</div>
+        </div>
+      </div>
+      <div class="tab-panel">
+        <div class="stack-grid">
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/pandas/F2F4F8">Pandas</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/numpy">NumPy</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/scikitlearn">Scikit-learn</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/plotly">Matplotlib</div>
+        </div>
+      </div>
+      <div class="tab-panel">
+        <div class="stack-grid">
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/databricks">Databricks</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/powerbi">Power BI</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/apachespark">Apache Spark</div>
+          <div class="stack-badge">Delta Lake</div>
+          <div class="stack-badge">Unity Catalog</div>
+        </div>
+      </div>
+      <div class="tab-panel">
+        <div class="stack-grid">
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/microsoftazure">Microsoft Azure</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/git">Git</div>
+          <div class="stack-badge"><img src="https://cdn.simpleicons.org/visualstudiocode">VS Code</div>
+          <div class="stack-badge">Azure DevOps</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-  </div>
-</section>
+</main>
 
-<footer>
-  <div class="wrap"><p>© 2026 Benson Yu</p></div>
-</footer>
+<footer>© 2026 Benson Yu. All rights reserved.</footer>
+<script src="/script.js"></script>
 </body>
 </html>

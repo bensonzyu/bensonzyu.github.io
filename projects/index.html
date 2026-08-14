@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects | Benson Yu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
 <nav>
-  <div class="wrap nav-inner-solo">
-    <ul class="nav-links">
+  <div class="wrap">
+    <ul class="navlinks">
       <li><a href="/">About Me</a></li>
       <li><a href="/work-experience/">Work Experience</a></li>
       <li><a href="/projects/" class="active">Projects</a></li>
@@ -20,118 +20,104 @@
       <li><a href="/assets/resume.pdf" target="_blank">Resume</a></li>
       <li><a href="/contact/">Contact</a></li>
     </ul>
+    <div class="gear"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
   </div>
 </nav>
 
-<div class="page-header wrap">
-  <div class="eyebrow">Portfolio</div>
-  <h1>Projects</h1>
-  <p>Data cleaning, reconciliation, and modeling work — from a 100K-record municipal dataset to weekend explorations.</p>
+<main>
+<div class="page-card">
+  <div class="center">
+    <div class="page-title">Projects</div>
+    <div class="page-underline" style="margin-left:auto;margin-right:auto;"></div>
+    <p class="page-sub">Data cleaning, reconciliation, and modeling work — from a 100K-record municipal dataset to weekend explorations.</p>
+  </div>
+
+  <div class="project-grid" style="margin-top:36px;">
+
+    <div class="project-card">
+      <div class="project-banner"><img src="https://cdn.simpleicons.org/python/38BDF8"></div>
+      <div class="project-tags">
+        <span class="project-tag"><img src="https://cdn.simpleicons.org/python/38BDF8">Python</span>
+        <span class="project-tag">Fuzzy Matching</span>
+        <span class="project-tag">Public Sector</span>
+      </div>
+      <div class="project-title">Boston ISD — Data Reconciliation</div>
+      <div class="project-desc">Cleaned and reconciled 100k+ city housing records using address standardization and fuzzy matching. Identified 83k+ unregistered rental properties and presented findings to ISD officials, driving proactive enforcement.</div>
+      <div class="project-btns">
+        <a href="https://github.com/BU-Spark/ds-isd-reconciliation/blob/data-cleaning-analysis/README.md" class="btn btn-outline">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-banner"><img src="https://cdn.simpleicons.org/databricks/38BDF8"></div>
+      <div class="project-tags">
+        <span class="project-tag"><img src="https://cdn.simpleicons.org/databricks/38BDF8">Databricks</span>
+        <span class="project-tag">Power BI</span>
+        <span class="project-tag">Azure</span>
+      </div>
+      <div class="project-title">Munch Market Analysis</div>
+      <div class="project-desc">Built Azure Databricks medallion pipelines ingesting SQL Server and Blob Storage data on 20-minute refreshes. Profiled 50+ restaurant attributes and translated stakeholder needs into KPIs across orders, delivery, and forecasting.</div>
+      <div class="project-btns">
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-banner"><img src="https://cdn.simpleicons.org/microsoftazure/38BDF8"></div>
+      <div class="project-tags">
+        <span class="project-tag"><img src="https://cdn.simpleicons.org/microsoftazure/38BDF8">Azure Synapse</span>
+        <span class="project-tag">ETL</span>
+        <span class="project-tag">Power BI</span>
+      </div>
+      <div class="project-title">COVID-19 Policy Analysis</div>
+      <div class="project-desc">Engineered an Azure-based ETL pipeline integrating 10k+ records from multiple sources into a star schema warehouse in Azure Synapse. Built dashboards tracking the three most effective policies in reducing case growth.</div>
+      <div class="project-btns">
+        <a href="https://github.com/bensonzyu/COVID-19-Policy-Proposals" class="btn btn-outline">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-banner"><img src="https://cdn.simpleicons.org/scikitlearn/38BDF8"></div>
+      <div class="project-tags">
+        <span class="project-tag"><img src="https://cdn.simpleicons.org/python/38BDF8">Python</span>
+        <span class="project-tag">Regression</span>
+      </div>
+      <div class="project-title">Airbnb London Price Prediction</div>
+      <div class="project-desc">Built a predictive model for Airbnb listing prices across London using regression techniques and feature engineering on listing attributes.</div>
+      <div class="project-btns">
+        <a href="https://github.com/bensonzyu/Airbnb-London/blob/main/BA305_Final.pdf" class="btn btn-outline">Report</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-banner"><img src="https://cdn.simpleicons.org/python/38BDF8"></div>
+      <div class="project-tags">
+        <span class="project-tag">Python</span>
+        <span class="project-tag">EDA</span>
+      </div>
+      <div class="project-title">World Happiness Project</div>
+      <div class="project-desc">Exploratory analysis of global happiness data, digging into which factors actually correlate with well-being across countries.</div>
+      <div class="project-btns">
+        <a href="https://github.com/bensonzyu/World-Happiness-Project" class="btn btn-outline">View Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-banner"><img src="https://cdn.simpleicons.org/opencv/38BDF8"></div>
+      <div class="project-tags">
+        <span class="project-tag">Machine Learning</span>
+        <span class="project-tag">Computer Vision</span>
+      </div>
+      <div class="project-title">Handwritten Recognition Calculator</div>
+      <div class="project-desc">A calculator that reads handwritten digits and operators and computes the result.</div>
+      <div class="project-btns">
+        <a href="https://github.com/bensonzyu/Handwritten-Recognition-Calculator" class="btn btn-outline">View Code</a>
+      </div>
+    </div>
+
+  </div>
 </div>
+</main>
 
-<section>
-  <div class="wrap">
-
-    <div class="project-card">
-      <div class="tag-row">
-        <span class="tag">Python</span><span class="tag">Fuzzy Matching</span><span class="tag">Public Sector</span>
-      </div>
-      <h3>Boston Inspectional Services Department — Data Reconciliation</h3>
-      
-      <ul class="exp-bullets">
-        <li>Cleaned and reconciled 100k+ city housing records using address standardization and fuzzy matching, enabling accurate detection of unregistered rental properties</li>
-        <li>Identified 83k+ unregistered rental properties, surfacing compliance risks by geography, ownership type, and proximity to universities for targeted enforcement</li>
-        <li>Delivered interactive dashboards and presented results to ISD officials, driving proactive enforcement strategies and improving housing compliance</li>
-      </ul>
-      
-      <div class="project-links" style="margin-top:14px;">
-        <a href="https://github.com/BU-Spark/ds-isd-reconciliation/blob/data-cleaning-analysis/README.md">View Code</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="tag-row">
-        <span class="tag">Databricks</span><span class="tag">Power BI</span><span class="tag">Azure</span>
-      </div>
-      <h3>Munch Market Analysis</h3>
-      
-      <ul class="exp-bullets">
-        <li>Built Azure Databricks medallion pipelines to ingest historical and incremental data from SQL Server and Azure Blob Storage, including order files updated every 20 minutes, for daily 8 AM refreshes</li>
-        <li>Profiled and cleaned 50+ restaurant data attributes, identifying issues across operating hours, categories, contact details, addresses, ratings, and availability to improve Silver-layer data quality</li>
-        <li>Collaborated with Analytics, Delivery, and Restaurant stakeholders to translate business requirements into KPIs and analytical datasets supporting orders, sales, delivery performance, rider operations, and forecasting</li>
-      </ul>
-      
-    </div>
-
-    <div class="project-card">
-      <div class="tag-row">
-        <span class="tag">Azure Synapse</span><span class="tag">ETL</span><span class="tag">Power BI</span>
-      </div>
-      <h3>COVID-19 Policy Analysis</h3>
-      
-      <ul class="exp-bullets">
-        <li>Engineered an Azure-based ETL pipeline integrating 10k+ COVID-19 records from multiple sources, centralizing data for improved accessibility and analysis</li>
-        <li>Designed a star schema warehouse in Azure Synapse, streamlining data organization and enabling high-performance queries for large-scale analytics</li>
-        <li>Built Power BI dashboards tracking infection and recovery trends, highlighting the three most effective policies in reducing case growth and informing public health decisions</li>
-      </ul>
-      
-      <div class="project-links" style="margin-top:14px;">
-        <a href="https://github.com/bensonzyu/COVID-19-Policy-Proposals">View Code</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-tag">Other Projects</div>
-    <h2>Smaller builds</h2>
-
-    <div class="project-card">
-      <div class="tag-row">
-        <span class="tag">Python</span><span class="tag">Regression</span>
-      </div>
-      <h3>Airbnb London Price Prediction</h3>
-      
-      <p>Built a predictive model for Airbnb listing prices across London using regression techniques and feature engineering on listing attributes.</p>
-      
-      <div class="project-links" style="margin-top:14px;">
-        <a href="https://github.com/bensonzyu/Airbnb-London/blob/main/BA305_Final.pdf">View Report</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="tag-row">
-        <span class="tag">Python</span><span class="tag">EDA</span>
-      </div>
-      <h3>World Happiness Project</h3>
-      
-      <p>Exploratory analysis of global happiness data, digging into which factors actually correlate with well-being across countries.</p>
-      
-      <div class="project-links" style="margin-top:14px;">
-        <a href="https://github.com/bensonzyu/World-Happiness-Project">View Code</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="tag-row">
-        <span class="tag">Machine Learning</span><span class="tag">Computer Vision</span>
-      </div>
-      <h3>Handwritten Recognition Calculator</h3>
-      
-      <p>A calculator that reads handwritten digits and operators and computes the result.</p>
-      
-      <div class="project-links" style="margin-top:14px;">
-        <a href="https://github.com/bensonzyu/Handwritten-Recognition-Calculator">View Code</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <div class="wrap"><p>© 2026 Benson Yu</p></div>
-</footer>
+<footer>© 2026 Benson Yu. All rights reserved.</footer>
 </body>
 </html>
