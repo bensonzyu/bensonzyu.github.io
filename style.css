@@ -129,8 +129,6 @@ h2 { font-family: var(--mono); font-size: 26px; margin-bottom: 36px; }
 .tag { font-family: var(--mono); font-size: 11px; color: var(--muted); border: 1px solid var(--rule); padding: 3px 9px; border-radius: 3px; }
 
 /* PROJECTS */
-.project-card { padding: 28px 0; border-bottom: 1px solid var(--rule); }
-.project-card:last-child { border-bottom: none; }
 .project-card h3 { font-size: 19px; margin-bottom: 8px; font-weight: 600; }
 .project-card p { color: #C7CAD1; font-size: 15px; max-width: 66ch; margin-bottom: 12px; }
 .project-links a { font-family: var(--mono); font-size: 13px; color: var(--amber); margin-right: 18px; }
@@ -225,3 +223,27 @@ footer p { color: var(--muted); font-size: 13px; font-family: var(--mono); }
   * { animation: none !important; transition: none !important; }
   .match-row { opacity: 1; }
 }
+/* COMPANY / SCHOOL LOGOS */
+.job-badge, .edu-badge {
+  overflow: hidden;
+  background: #fff;
+}
+.job-badge img, .edu-badge img {
+  width: 100%; height: 100%; object-fit: contain; padding: 8px;
+}
+
+/* TECH ICONS */
+.stack-item { display: flex; align-items: center; gap: 10px; }
+.stack-item img { width: 18px; height: 18px; flex-shrink: 0; }
+.skill-pill { display: inline-flex; align-items: center; gap: 8px; }
+.skill-pill img { width: 16px; height: 16px; }
+
+/* PROJECT CARDS AS BORDERED BOXES */
+.project-card {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+  padding: 28px 30px;
+  margin-bottom: 24px;
+}
+.project-card:last-child { margin-bottom: 0; }
