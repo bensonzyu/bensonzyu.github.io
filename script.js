@@ -1,4 +1,4 @@
-const roles = ["Data & AI Consultant", "Analytics Consultant", "Data Engineer"];
+const roles = ["Data Analyst", "Data Engineer","Data & AI Consultant"];
 const typedEl = document.getElementById('typed');
 if (typedEl) {
   let roleIdx = 0, charIdx = 0, deleting = false;
