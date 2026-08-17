@@ -34,3 +34,11 @@ function initTabs(groupSelector) {
   });
 }
 initTabs('.tab-row');
+
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const details = btn.previousElementSibling.querySelector('.job-details') || btn.parentElement.querySelector('.job-details');
+    details.classList.toggle('open');
+    btn.textContent = details.classList.contains('open') ? 'Read Less' : 'Read More';
+  });
+});
